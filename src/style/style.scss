@@ -1,0 +1,60 @@
+@use "variables/variables";
+html {
+	font-size: 112.5%;
+}
+
+body {
+	tab-size: 4;
+	font-weight: 400;
+	font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+	background: var(--background-color);
+	color: var(--text-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+
+::selection {
+	background-color: var( --i-background-color );
+	color: var( --i-text-color)
+}
+
+
+@mixin light() {
+	--accent-background: hsl(188 12% 95%);
+	--accent-text: hsl(188 33% 7%);
+	--accent-mild: hsl(188 6% 44%);
+	
+	--background-color: hsl(188 3% 97%);
+	--background-color-alt: hsl(188 3% 90%);
+	--background-color-alt-alt: hsl(188 3% 95%);
+	--text-color: hsl(188 3% 27%);
+	--text-color-alt: hsl(188 3% 7%);
+	--text-color-soft: hsl(188 10% 40%);
+
+	--link-color: hsl(188 50% 20%);
+	--link-color-hover: hsl(188 66% 66%);
+
+
+	--i-background-color: hsl(188 3% 7%);
+	--i-background-color-alt: hsl(188 13% 33%);
+	--i-text-color: hsl(188 3% 88%);
+
+	--code-background: hsl(188 5% 10%);
+	--code-inline-bg: hsl(188, 100%, 92%);
+	--code-inline-color: hsl(188, 90%, 3%);
+
+
+	// Habits
+	--level-1-color: hsl(188, 5%, 84%);
+	--level-2-color: hsl(188, 5%, 73%);
+	--level-3-color: hsl(188, 5%, 61%);
+	--level-4-color: hsl(188, 5%, 44%);
+	--level-5-color: hsl(188, 5%, 5%);
+
+	--habit-empty: hsl(188 5% 90%);
+	--habit-hover-block: var(--level-5-color);
+}

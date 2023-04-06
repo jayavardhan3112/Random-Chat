@@ -1,0 +1,154 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@mixin dark {
+	--accent-background: hsl(188 1% 7%);
+	--accent-text: hsl(188 17% 88%);
+	--accent-mild: hsl(188 7% 48%);
+	
+	--background-color: hsl(188 3% 11%);
+	--background-color-alt: hsl(188 10% 22%);
+	--background-color-alt-alt: hsl(188 3% 30%);
+	--text-color: hsl(188 3% 77%);
+	--text-color-alt: hsl(188 20% 71%);
+	--text-color-soft: hsl(188 10% 50%);
+
+	--link-color: hsl(188 50% 60%);
+	--link-color-hover: hsl(188 86% 76%);
+
+
+	--i-background-color: hsl(188 5% 20%);
+	--i-background-color-alt: hsl(188 33% 33%);
+	--i-text-color: hsl(188 3% 88%);
+
+	--code-background: hsl(188 5% 10%);
+	--code-inline-bg: hsl(188, 90%, 12%);
+	--code-inline-color: hsl(188, 100%, 95%);
+
+	// Habits
+	--level-1-color: hsl(188, 5%, 24%);
+	--level-2-color: hsl(188, 5%, 34%);
+	--level-3-color: hsl(188, 5%, 44%);
+	--level-4-color: hsl(188, 5%, 70%);
+	--level-5-color: hsl(188, 5%, 87%);
+
+	--habit-empty: hsl(188 5% 18%);
+	--habit-hover-block: var(--level-5-color);
+	
+}
+
+
+@mixin light() {
+	--accent-background: hsl(188 12% 95%);
+	--accent-text: hsl(188 33% 7%);
+	--accent-mild: hsl(188 6% 44%);
+	
+	--background-color: hsl(188 3% 97%);
+	--background-color-alt: hsl(188 3% 90%);
+	--background-color-alt-alt: hsl(188 3% 95%);
+	--text-color: hsl(188 3% 27%);
+	--text-color-alt: hsl(188 3% 7%);
+	--text-color-soft: hsl(188 10% 40%);
+
+	--link-color: hsl(188 50% 20%);
+	--link-color-hover: hsl(188 66% 66%);
+
+
+	--i-background-color: hsl(188 3% 7%);
+	--i-background-color-alt: hsl(188 13% 33%);
+	--i-text-color: hsl(188 3% 88%);
+
+	--code-background: hsl(188 5% 10%);
+	--code-inline-bg: hsl(188, 100%, 92%);
+	--code-inline-color: hsl(188, 90%, 3%);
+
+
+	// Habits
+	--level-1-color: hsl(188, 5%, 84%);
+	--level-2-color: hsl(188, 5%, 73%);
+	--level-3-color: hsl(188, 5%, 61%);
+	--level-4-color: hsl(188, 5%, 44%);
+	--level-5-color: hsl(188, 5%, 5%);
+
+	--habit-empty: hsl(188 5% 90%);
+	--habit-hover-block: var(--level-5-color);
+}
